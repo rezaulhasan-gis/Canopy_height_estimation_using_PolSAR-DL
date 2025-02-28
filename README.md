@@ -62,6 +62,7 @@ This project focuses on estimating vegetation canopy height using a deep learnin
 - **Deep Learning**: Custom PF-Unet architecture with attention mechanisms.
 
 ## How to Use the Code
+This research manuscript is under review hence all of the code will available upon publicaiton
 
 ### 1. Clone the Repository
 
