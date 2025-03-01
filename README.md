@@ -44,15 +44,27 @@ This project focuses on estimating vegetation canopy height using a deep learnin
 
 ## Example Images
 
-1.**PF-Unet architecture**
-   ![PF-Unet architecture](images/confusion_matrix.png)
-2. **Estimated Canopy Height Map**
-   ![Canopy Height Map](images/canopy_height_map_L_band.png)
-   ![Canopy Height Map](images/canopy_height_map_P_band.png)
-4. **Residual Analysis**
-   ![L-band_residual](images/feature_importance.png)
-   ![P-band_residual](images/feature_importance.png)
-(Ensure images are stored in an `images/` folder in your repository.)
+### 1. **PF-Unet Architecture**
+   *Illustrates the modified U-Net architecture used for canopy height estimation.*
+   ![PF-Unet architecture](PF-Unet_architecture.png)
+
+### 2. **Estimated Canopy Height Map**
+   *Predicted canopy height maps for different SAR bands.*
+   
+   **L-band Prediction**
+   ![Canopy Height Map for L-band](predictions_visualization_L.png)
+   
+   **P-band Prediction**
+   ![Canopy Height Map for P-band](predictions_visualization_P.png)
+
+### 3. **Residual Analysis**
+   *Residual error analysis of different models applied to L-band and P-band data.*
+   
+   **L-band Residual Analysis**
+   ![L-band_residual](L_band_residual_plot_all_models.png)
+   
+   **P-band Residual Analysis**
+   ![P-band_residual](P_band_residual_plot_all_models.png)
 
 ## Technologies Used
 
@@ -62,7 +74,7 @@ This project focuses on estimating vegetation canopy height using a deep learnin
 - **Deep Learning**: Custom PF-Unet architecture with attention mechanisms.
 
 ## How to Use the Code
-This research manuscript is under review hence all of the code will available upon publicaiton
+This research manuscript is under review hence all of the code will available upon publicaiton. Check the scripts folder for codes
 
 ### 1. Clone the Repository
 
@@ -70,27 +82,6 @@ This research manuscript is under review hence all of the code will available up
 git clone https://github.com/yourusername/canopy-height-mapping.git
 cd canopy-height-mapping
 ```
-
-### 2. Install Dependencies
-
-```sh
-pip install -r requirements.txt
-```
-
-### 3. Run the Model
-
-```sh
-python train_pf_unet.py
-```
-
-## How to Reuse This Code
-
-This approach can be adapted for other **remote sensing-based vegetation studies**:
-
-- **Modify Input Data**: Replace SAR backscatter and reference data with your dataset.
-- **Adjust Model Architecture**: Customize U-Net layers for different applications.
-- **Hyperparameter Tuning**: Optimize for other SAR sensors or environmental conditions.
-- **Expand Functionality**: Integrate optical data, additional features, or alternative deep learning models.
 
 ## References
 
